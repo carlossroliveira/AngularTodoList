@@ -1,5 +1,42 @@
 .container {
-  padding: 20px;
-  max-width: 750px;
-  background-color: tomato;
+  padding: 2.5rem;
+
+  .title {
+    display: flex;
+    font-weight: 700;
+    font-size: 1.5rem;
+    justify-content: center;
+    margin-bottom: 1.5625rem;
+    text-transform: uppercase;
+  }
+
+  .search-container {
+    display: flex;
+    margin: 0 auto;
+    padding: 0.625rem;
+    align-items: center;
+    max-width: 46.875rem;
+    border-radius: 0.625rem;
+    background-color: #f7f7f7;
+    border: 0.125rem solid #6c63ff;
+
+    input {
+      border: none;
+      outline: none;
+      flex-grow: 1;
+      color: #6c63ff;
+      font-size: 1rem;
+      padding: 0.625rem;
+      background-color: #f7f7f7;
+    }
+
+    ::-webkit-input-placeholder {
+      color: #c3c1e5;
+    }
+
+    span {
+      color: #6c63ff;
+      font-size: 2.1875rem;
+    }
+  }
 }
