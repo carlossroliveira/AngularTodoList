@@ -2,4 +2,25 @@
   padding: 20px;
   max-width: 750px;
   background-color: rgb(240, 71, 255);
+
+  button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #6c63ff;
+    color: white;
+    border: none;
+    cursor: pointer;
+
+    box-shadow: 0 0 15px rgba(108, 99, 255, 0.6);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: scale(1.1);
+      box-shadow: 0 0 25px rgba(108, 99, 255, 0.8);
+    }
+  }
 }
