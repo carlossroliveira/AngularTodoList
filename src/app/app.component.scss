@@ -1,8 +1,6 @@
 .container {
-  height: 100vh;
-  background-color: #f7f7f7;
-
   gap: 10px;
   display: grid;
+  background-color: #f7f7f7;
   grid-template-rows: auto 1fr auto;
 }

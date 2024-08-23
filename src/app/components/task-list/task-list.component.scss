@@ -1,7 +1,8 @@
 .container {
   margin: 0 auto;
+  max-height: 60vh;
+  overflow-y: auto;
   max-width: 46.875rem;
-
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -12,10 +13,10 @@
     width: 100%;
     align-items: center;
     padding: 0.625rem 0;
-    max-width: 31.25rem;
-    margin: 1.875rem auto;
+    margin: 30px auto 10px;
     justify-content: space-between;
     border-bottom: 0.0625rem solid #c3c1e5;
+    width: 600px;
 
     input[type="checkbox"] {
       margin-right: 0.625rem;
@@ -62,31 +63,20 @@
         color: #ff4c4c;
       }
     }
-  }
 
-  .button {
-    display: flex;
-    justify-content: end;
-
-    button {
-      width: 3.125rem;
-      height: 3.125rem;
-      border-radius: 50%;
+    .divInfo {
       display: flex;
-      justify-content: center;
-      align-items: center;
-      background-color: #6c63ff;
-      color: white;
+      flex-direction: column;
+      width: 100%;
+    }
+
+    .completed {
+      margin-right: 5px;
+    }
+
+    .button_delete {
       border: none;
-      cursor: pointer;
-
-      box-shadow: 0 0 15px rgba(108, 99, 255, 0.6);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-
-      &:hover {
-        transform: scale(1.1);
-        box-shadow: 0 0 25px rgba(108, 99, 255, 0.8);
-      }
+      background-color: transparent;
     }
   }
 }
