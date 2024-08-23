@@ -1,8 +1,28 @@
 <header class="container">
   <span class="title">todo list</span>
 
-  <div class="search-container">
-    <input type="text" placeholder="Search note..." />
-    <span class="material-icons-round">manage_search</span>
-  </div>
+  <form (ngSubmit)="addTask()">
+    <div class="input-container">
+      <div class="search-container">
+        <input
+          type="text"
+          placeholder="Título"
+          [(ngModel)]="newTask.title"
+          name="title"
+          required
+        />
+      </div>
+
+      <div class="search-container">
+        <input
+          placeholder="Descrição"
+          [(ngModel)]="newTask.description"
+          name="description"
+          required
+        />
+      </div>
+    </div>
+
+    <button type="submit">Adicionar Tarefa</button>
+  </form>
 </header>
