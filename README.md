@@ -1,6 +1,6 @@
 # ToDo List Application
 
-![Screenshot_6](https://github.com/user-attachments/assets/e2f7a6f6-54a9-4e12-9c74-6c240f5f0da5)
+![Screenshot_7](https://github.com/user-attachments/assets/ca44afae-47ad-42c2-947b-592016f904e2)
 
 <h4 align="center"> 
 	🚀 Aplicação de Lista de Tarefas 🚀
