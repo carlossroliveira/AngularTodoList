@@ -1,27 +1,90 @@
-# AngularTodoList
+# ToDo List Application
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 18.2.1.
+![Screenshot_6](https://github.com/user-attachments/assets/e2f7a6f6-54a9-4e12-9c74-6c240f5f0da5)
 
-## Development server
+<h4 align="center"> 
+	🚀 Aplicação de Lista de Tarefas 🚀
+</h4>
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## 💻 Sobre
 
-## Code scaffolding
+Esta aplicação chamada **ToDo List** é uma aplicação simples para gerenciamento de tarefas. Permite ao usuário adicionar novas tarefas, listar todas as tarefas, excluir uma tarefa e marcar uma tarefa como concluída.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+### Clonando e Executando
 
-## Build
+Passo a passo para clonar e executar a aplicação na sua máquina:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+1. **Clone o repositório:**
 
-## Running unit tests
+   ```bash
+   $ git clone https://github.com/carlossroliveira/AngularTodoList.git
+   ```
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+2. **Navegue até o diretório do projeto:**
 
-## Running end-to-end tests
+   ```bash
+   $ cd todo-list
+   ```
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+3. **Instale as dependências:**
 
-## Further help
+   ```bash
+   $ npm install
+   ```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+   ou
+
+   ```bash
+   $ yarn install
+   ```
+
+4. **Execute o projeto:**
+
+   ```bash
+   $ npm start
+   ```
+
+   ou
+
+   ```bash
+   $ yarn start
+   ```
+
+   A aplicação estará disponível em `http://localhost:4200`.
+
+## 🛠 Tecnologias
+
+As seguintes principais ferramentas foram usadas na construção do projeto:
+
+- **[Angular 18](https://angular.io/)**
+- **[TypeScript](https://www.typescriptlang.org/)**
+- **[Sass](https://sass-lang.com/)**
+- **[JSONPlaceholder](https://jsonplaceholder.typicode.com/)** (Biblioteca fake para simulação de API)
+
+## 🔧 Funcionalidades
+
+- **Adicionar Tarefas:** Permite criar novas tarefas com título e descrição.
+- **Listar Tarefas:** Exibe todas as tarefas cadastradas.
+- **Excluir Tarefas:** Permite remover tarefas existentes.
+- **Marcar Tarefas como Concluídas:** Permite marcar tarefas como concluídas diretamente na interface.
+
+## 📜 Uso da Biblioteca Fake
+
+Para simular a interação com uma API REST, estamos utilizando o [JSONPlaceholder](https://jsonplaceholder.typicode.com/), que é uma biblioteca fake que fornece endpoints para testes e desenvolvimento. Os seguintes endpoints são utilizados:
+
+- **GET /tasks:** Retorna a lista de todas as tarefas.
+- **POST /tasks:** Cria uma nova tarefa.
+- **DELETE /tasks/{id}:** Exclui uma tarefa.
+
+## 👤 Autor
+
+**Carlos Oliveira**
+
+- LinkedIn: [@SeuLinkedIn](https://www.linkedin.com/in/carlos-oliveira-ab93941a1/)
+
+---
+
+## 📝 Licença
+
+Copyright © 2024 [Carlos Oliveira](https://github.com/carlossroliveira).<br />
+Este projeto está licenciado sob a [MIT](https://opensource.org/licenses/MIT).
