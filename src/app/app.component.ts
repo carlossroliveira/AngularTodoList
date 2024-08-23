@@ -1,16 +1,13 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
-import { HeaderComponent } from './components/header/header.component';
+import { CommonModule } from '@angular/common';
 import { FooterComponent } from './components/footer/footer.component';
-import { TaskListComponent } from './components/task-list/task-list.component'
+import { HeaderComponent } from './components/header/header.component';
+import { TaskListComponent } from './components/task-list/task-list.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, HeaderComponent, TaskListComponent, FooterComponent],
+  imports: [CommonModule, HeaderComponent, TaskListComponent, FooterComponent],
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss',
 })
-export class AppComponent {
-  title = 'AngularTodoList';
-}
+export class AppComponent {}
