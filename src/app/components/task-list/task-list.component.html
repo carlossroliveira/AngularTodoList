@@ -1,35 +1,20 @@
 <section class="container">
-  <div>
+  <div *ngFor="let task of tasks">
     <div class="todo-item">
-      <input type="checkbox" id="todo1" />
-      <label for="todo1">Task example</label>
-      <span class="delete-icon material-icons">delete</span>
+      <input type="checkbox" [id]="task.id" (change)="toggleCompletion(task)" />
+
+      <div class="divInfo">
+        <p class="completed">
+          Status: {{ task.completed ? "Concluída" : "Não Concluída" }}
+        </p>
+
+        <label>Titulo: {{ task.title }}</label>
+        <label>Descrição: {{ task.description }}</label>
+      </div>
+
+      <button (click)="deleteTask(task.id)" class="button_delete">
+        <span class="delete-icon material-icons">delete</span>
+      </button>
     </div>
-
-    <div class="todo-item">
-      <input type="checkbox" id="todo1" />
-      <label for="todo1">Task example</label>
-      <span class="delete-icon material-icons">delete</span>
-    </div>
-
-    <div class="todo-item">
-      <input type="checkbox" id="todo1" />
-      <label for="todo1">Task example</label>
-      <span class="delete-icon material-icons">delete</span>
-    </div>
-
-    <div class="todo-item">
-      <input type="checkbox" id="todo1" />
-      <label for="todo1">Task example</label>
-      <span class="delete-icon material-icons">delete</span>
-    </div>
-  </div>
-
-  <app-task-modal></app-task-modal>
-
-  <div class="button">
-    <button>
-      <span class="material-icons">add</span>
-    </button>
   </div>
 </section>
